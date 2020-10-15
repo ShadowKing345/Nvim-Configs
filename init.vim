@@ -1,13 +1,5 @@
-call plug#begin('~/.vim/plugged')
-" Tools
-	Plug 'neoclide/coc.nvim', {'branch': 'release'}
-	Plug 'vim-airline/vim-airline'
-	Plug 'vim-airline/vim-airline-themes'
-
-	Plug 'danilo-augusto/vim-afterglow' " Theme
-call plug#end()
-
-source ~/.config/nvim/plugings-configs/coc.vim
+source ~/.config/nvim/plugings.vim
+source ~/.config/nvim/plugings-configs/init.vim
 
 set number
 
