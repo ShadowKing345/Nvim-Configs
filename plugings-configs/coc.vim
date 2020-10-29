@@ -2,6 +2,15 @@
 set nobackup
 set nowritebackup
 
+let g:coc_global_extensions = [
+        \ 'coc-actions',
+        \ 'coc-python',
+        \ 'coc-git',
+        \ 'coc-json',
+        \ 'coc-vimlsp',
+        \ 'coc-explorer'
+        \]
+
 " Give more space for displaying messages.
 set cmdheight=2
 
@@ -131,7 +140,9 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 " Show all diagnostics.
 nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
 " Manage extensions.
-nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
+nnoremap <silent><nowait> <space>E  :<C-u>CocList extensions<cr>
+" Open Explorer 
+nmap <space>e :CocCommand explorer<CR>
 " Show commands.
 nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
 " Find symbol of current document.
