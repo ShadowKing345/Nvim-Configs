@@ -1,2 +1,0 @@
-let g:afterglow_inherit_background=1
-colorscheme afterglow
