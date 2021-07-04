@@ -1,11 +1,9 @@
 require('plugin')
+require('general')
+require('colorscheme')
+require('keybindings')
 
-require('moonlight').set()
-require('lualine').setup({
-	options ={
-		theme = 'moonlight'
-	}
-})
+require('plugin_config.compe')
 
 -- LSP setup
 require('lsp')
